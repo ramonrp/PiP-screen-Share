@@ -1,0 +1,35 @@
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+.buttonContainer{
+  background-color: #252525;
+  border: 4px solid black;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.pipButton{
+  background-color: #666666;
+  border: 5px solid #252525;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding: 10px;
+  border:4px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+
+.pipButton:active {
+  transform: translateY(3px);
+}
