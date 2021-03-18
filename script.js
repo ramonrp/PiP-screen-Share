@@ -24,6 +24,7 @@ async function startCapture(displayMediaOptions) {
     return captureStream;
 }
 
+//Check if browser supports PiP
 if ('pictureInPictureEnabled' in document) {
     pipButton.classList.remove('hidden')
     pipButton.disabled = false;
@@ -36,6 +37,7 @@ if ('pictureInPictureEnabled' in document) {
 
 
 function handlePictureInPicture() {
+    //Check if pip is already working.
     if (document.pictureInPictureElement) {
         document.exitPictureInPicture()
             .catch((error) => console.log(error));
